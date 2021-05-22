@@ -1,0 +1,138 @@
+.benefits__list{
+    padding: 0;
+    margin-top: 653px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.benefits__title {
+    padding: 0;
+    width: 445px;
+    height: 445px;
+    margin: 69px 130px 69px 0;
+    display: block;
+
+
+
+  
+}
+.benefits__itme {
+    width: 1140xp;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    
+}    
+.benefits__itme:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+
+.benefits__titul {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -2.14286px;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 24px 0;
+}
+.benefits__text {
+    font-family: 'Lexend Deca','Helvetica Neue',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+
+}
+.img {
+    border-radius: 50%;
+}
+.img2 {
+    margin: 69px 0px 69px 130px;
+}
+.benefits__img {
+    width: 445px;
+    height: 445px;
+    position: relative;
+
+
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 445px;
+        height: 445px;
+        top: 0;
+        left: 445+64px;
+        background-image: url("../../img/Mask.png");
+        display: flex;
+
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 740px;
+        height: 150px;
+        left: -100px;
+        bottom: 0;
+        background-image: url("../../img/Group32.svg");
+    }
+}
+.benefits__img-2 {
+    width: 445px;
+    height: 445px;
+    position: relative;
+  
+    &::before {
+        position: absolute;
+        content: '';
+        width: 445px;
+        height: 445px;
+        top: 0;
+        left: -445-64px;
+        background-image: url("../../img/Mask.png");
+        display: flex;
+        }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 740px;
+        height: 150px;
+        top: 0px;
+        left: -170-380px;
+        background-image: url("../../img/Group-13.svg");
+    }
+}
+.benefits__img-3 {
+    width: 445px;
+    height: 445px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 445px;
+        height: 445px;
+        top: 0;
+        left: 445+64px;
+        background-image: url("../../img/Mask.png");
+        display: flex;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 740px;
+        height: 150px;
+        top: 78px;
+        left: +250px;
+        background-image: url("../../img/Group32.svg");
+    }
+}
+.ben__link {
+    display: inline-block;
+    margin-top: 40px;
+
+}

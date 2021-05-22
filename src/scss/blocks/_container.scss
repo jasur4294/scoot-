@@ -1,0 +1,17 @@
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: block;
+}
+@media screen and (max-width: $tablet) {
+    .container{
+        max-width: 719px;
+    }
+}
+@media screen and (max-width: 689px) {
+    .container{
+        max-width: 357px;
+        display: inherit;
+    }
+}

@@ -1,0 +1,149 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.header__nav-wrapper {
+    margin-left: auto;
+    
+
+}
+.header__nav-container {
+    display: flex;
+    align-items: baseline;
+}
+.header__nav-list {
+    @include reset-list;
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.nav__link {
+    display: block;
+    background-color: #FCB72B;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 14px 39px;
+    border: 3px solid transparent;
+
+    &:active {
+    
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background-color: #fff;
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+    }
+}
+.header__nav-link {
+    display: block;
+    padding: 15px 25px;
+    color: #939CAA;
+}
+.hamburger {
+    display: none;
+
+}
+
+
+
+
+@media screen and (max-width: 689px) {
+    .header__container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+    }
+    .hamburger {
+        display: block;
+        margin-left: 0px;
+        padding: 0;
+        border: none;
+        background-color: #fff;
+        width: 20px;
+    
+        &::after,
+        .hamburger__inner,
+        &::before {
+            content: '';
+            display: block;
+            height: 3.69px;
+            background-color: #FCB72B;
+            margin-bottom: 2.46px;
+            transition: 1.2s ease all;
+
+        }
+            
+        &::after {
+            margin-bottom: 0;
+        }
+    }
+    
+    .hamburger--active {
+        &::after {
+            transform: rotate(-45deg);
+    
+        }
+        .hamburger__inner {
+            background-color: #fff;
+        }
+        &::before {
+            position: relative;
+            top: 3px;
+            transform: rotate(44deg);
+            margin-bottom: -6.60px;
+        }
+    }
+    .header__nav-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 34.6px);
+
+      
+
+        &::before {
+            content: '';
+            width: 75%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #333A44;
+            z-index: 2;
+        }
+    }
+    .header__nav-container {
+        flex-direction: column;
+        max-width: 357px;
+        margin: 0 auto;
+        padding: 0 15px;
+        position: relative;
+        z-index: 3;
+    }
+    .header__nav-list{
+        flex-direction: column;
+    
+    }
+    .header__nav-wrapper-active {
+        display: block;
+    }
+
+}

@@ -1,0 +1,48 @@
+.counter__action {
+    position: absolute;
+    width: 1440px;
+    height: 300px;
+    background: #495567;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+   
+
+}
+.counter__action-img {
+    position: absolute;
+    left: 450px;
+    width: 1158px;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../img/Group22.png);
+    bottom: 0;
+}
+.counter__action-title {
+    padding: 0;
+    margin: 0;
+    width: 415px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+}
+.counter__action-link {
+    border-radius: 4px;
+}
+.counter__action-con {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+    
+}
+.signup__image-container {
+    margin-left: 336px;
+}
